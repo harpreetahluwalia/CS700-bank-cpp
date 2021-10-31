@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Assignment 3" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Assignment 3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Assignment 3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/Account.h" />
+		<Unit filename="include/Adult.h" />
+		<Unit filename="include/Bank.h" />
+		<Unit filename="include/Checking_Account.h" />
+		<Unit filename="include/Customer.h" />
+		<Unit filename="include/Date.h" />
+		<Unit filename="include/Savings_Account.h" />
+		<Unit filename="include/Senior.h" />
+		<Unit filename="include/Student.h" />
+		<Unit filename="include/Transaction.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Account.cpp" />
+		<Unit filename="src/Adult.cpp" />
+		<Unit filename="src/Bank.cpp" />
+		<Unit filename="src/Checking_Account.cpp" />
+		<Unit filename="src/Customer.cpp" />
+		<Unit filename="src/Date.cpp" />
+		<Unit filename="src/Savings_Account.cpp" />
+		<Unit filename="src/Senior.cpp" />
+		<Unit filename="src/Student.cpp" />
+		<Unit filename="src/Transaction.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
