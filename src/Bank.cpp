@@ -6,7 +6,7 @@ Bank::Bank()
     //ctor
 }
 
-int NoOfAcc = 0;
+
 
 void Bank::add_account(Account* acc){
 //cout<<"In add account bank : Owner "<<acc->get_customer().get_name()<<" and balance is : "<<acc->get_balance();
@@ -73,7 +73,7 @@ float interest;
 Account* Bank::get_account(long accNo){
 
 
-    for (int i=0 ; i<sizeof(array_accounts); i++){
+    for (int i=0 ; i<NoOfAcc; i++){
 
         if (array_accounts[i]->get_account_number() == accNo){
          //   cout<<"ACCOUNT NUMBERRR IS :: == "<<array_accounts[i]->get_account_number();
@@ -83,9 +83,9 @@ Account* Bank::get_account(long accNo){
 
     }
 
-    cout<<"Please enter correct Account Number again. ";
+    cout<<"\nIncorrect Account Number! Please try again. \n";
   //  return &Account();
-
+        return nullptr;
    // return array_accounts[0];
 
 

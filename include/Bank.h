@@ -23,7 +23,7 @@ class Bank
 
     protected:
         Account *array_accounts[15]; //array_accounts[15];
-
+        int NoOfAcc = 0;
 
     private:
         string type[15];

@@ -141,6 +141,11 @@ int main()
                 cout<<"Enter the Account Number : ";
                 cin>>accNo;
 
+               // Account()
+                if(bank.get_account(accNo) == nullptr){
+                    continue;
+                }
+
 
             //    Account account = bank.get_account(accNo);
 
@@ -234,6 +239,9 @@ int main()
                 long accNo;
                 cout<<"Enter the Account Number : ";
                 cin>>accNo;
+                if(bank.get_account(accNo) == nullptr){
+                    continue;
+                }
             //    Account account = bank.get_account(accNo);
 
                 float amount;
@@ -248,11 +256,11 @@ int main()
                 int day = stoi(d.substr(8,9));
 
                 Date date(day,month,year);
-                bank.make_withdrawl(amount,accNo);
-              //  if(!()){
-               //     cout<<"Insufficient Funds available, please try again. \nYour current balance is : "<< bank.get_account(accNo)->get_balance();
-             //       continue;
-             //   }
+                //;
+                if(!(bank.make_withdrawl(amount,accNo))){
+                    cout<<"Insufficient Funds available, please try again. \nYour current balance is : "<< bank.get_account(accNo)->get_balance();
+                    continue;
+                }
                 Transaction* transaction1 = new Transaction("WD", amount, bank.get_account(accNo)->get_balance(),date);
 
                 bank.get_account(accNo)->add_transaction(transaction1);
@@ -272,10 +280,13 @@ int main()
 
         else if (n==3){
 
+
             long accountNo;
             cout<<"Enter Account Number : \n";
             cin>>accountNo;
-
+        if(bank.get_account(accountNo) == nullptr){
+                    continue;
+                }
             float balance;
             balance = bank.balance(accountNo);
           //  Account* account = bank.get_account(accountNo);
@@ -298,6 +309,7 @@ int main()
       //  }*/
     }
         else if (n==4){
+
 
             break;
 
