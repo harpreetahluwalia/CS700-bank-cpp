@@ -1,6 +1,6 @@
 #include "Customer.h"
 //#include "Account.h"
-Customer::Customer(string n,string a,long t, int x)
+Customer::Customer(string n,string a,long long t, int x)
 {
 
 

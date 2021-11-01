@@ -15,7 +15,7 @@ class Bank
         bool make_withdrawl(float amount, long accNo);
 
         float balance(long accNo);
-
+        float check_Charges(long accNo);
         float get_interest(long accNo);
 
         Account* get_account(long accNo);

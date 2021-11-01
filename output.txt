@@ -1,0 +1,267 @@
+
+ Assignment 3 - CS700 - Harpreet Singh
+
+--------------------------------------------------------
+
+Select:
+0: Add Account
+1: Make Deposit
+2: Make Withdrawal
+3: Check Account
+4: Exit
+0
+Enter Customer Name : John
+Enter Customer Address : Regina
+Enter Customer Age : 23
+Enter Customer Phone Number : 3069991340
+
+Select :
+0: Senior
+1: Adult
+2: Student
+1
+
+Select:
+0: Checking
+1: Savings
+1
+
+Account Has Been Added!
+Account Number : 1
+
+--------------------------------------------------------
+
+Select:
+0: Add Account
+1: Make Deposit
+2: Make Withdrawal
+3: Check Account
+4: Exit
+1
+Enter the Account Number : 1
+Enter Amount : 2000
+Enter the date yyyy-mm-dd> 2017-06-03
+Deposit in 1 , Amount : $2000 on 2017-06-03 , New balance : $2000
+It is 1612 days old Deposit. Thus Interest $100 is credited to the account
+
+--------------------------------------------------------
+
+Select:
+0: Add Account
+1: Make Deposit
+2: Make Withdrawal
+3: Check Account
+4: Exit
+3
+Enter Account Number :
+1
+
+Account Details :
+Owner : John
+Address : Regina
+Account No. : 1
+Balance : 2100
+Type of Account : Adult
+
+Transactions Detail :
+
+DEP     2017-06-03      $2000   $2000
+
+INT CR  2021-11-01      $100    $2100
+
+
+--------------------------------------------------------
+
+Select:
+0: Add Account
+1: Make Deposit
+2: Make Withdrawal
+3: Check Account
+4: Exit
+2
+Enter the Account Number : 1
+Enter Amount : 300
+Enter the date yyyy-mm-dd> 2021-10-12
+
+Withdraw from Account 1 amount: $300 on 2021-10-12 New Balance : $1800
+
+--------------------------------------------------------
+
+Select:
+0: Add Account
+1: Make Deposit
+2: Make Withdrawal
+3: Check Account
+4: Exit
+3
+Enter Account Number :
+1
+
+Account Details :
+Owner : John
+Address : Regina
+Account No. : 1
+Balance : 1800
+Type of Account : Adult
+
+Transactions Detail :
+
+DEP     2017-06-03      $2000   $2000
+
+INT CR  2021-11-01      $100    $2100
+
+WD      2021-10-12      $300    $1800
+
+
+--------------------------------------------------------
+
+Select:
+0: Add Account
+1: Make Deposit
+2: Make Withdrawal
+3: Check Account
+4: Exit
+0
+Enter Customer Name : Sara
+Enter Customer Address : Calgary
+Enter Customer Age : 18
+Enter Customer Phone Number : 3064447666
+
+Select :
+0: Senior
+1: Adult
+2: Student
+2
+
+Select:
+0: Checking
+1: Savings
+0
+
+Account Has Been Added!
+Account Number : 2
+
+--------------------------------------------------------
+
+Select:
+0: Add Account
+1: Make Deposit
+2: Make Withdrawal
+3: Check Account
+4: Exit
+1
+Enter the Account Number : 700
+
+Incorrect Account Number! Please try again.
+
+
+--------------------------------------------------------
+
+Select:
+0: Add Account
+1: Make Deposit
+2: Make Withdrawal
+3: Check Account
+4: Exit
+2
+Enter the Account Number : 2
+Enter Amount : 900
+Enter the date yyyy-mm-dd> 2020-07-11
+Insufficient Funds available, please try again.
+Your current balance is : $0
+
+--------------------------------------------------------
+
+Select:
+0: Add Account
+1: Make Deposit
+2: Make Withdrawal
+3: Check Account
+4: Exit
+1
+Enter the Account Number : 2
+Enter Amount : 1200
+Enter the date yyyy-mm-dd> 2020-12-10
+Deposit in 2 , Amount : $1200 on 2020-12-10 , New balance : $1200
+It is 326 days old Deposit. Thus Interest $48 is credited to the account
+
+--------------------------------------------------------
+
+Select:
+0: Add Account
+1: Make Deposit
+2: Make Withdrawal
+3: Check Account
+4: Exit
+3
+Enter Account Number :
+2
+
+Account Details :
+Owner : Sara
+Address : Calgary
+Account No. : 2
+Balance : 1248
+Type of Account : Student
+
+Transactions Detail :
+
+DEP     2020-12-10      $1200   $1200
+
+INT CR  2021-11-01      $48     $1248
+
+
+--------------------------------------------------------
+
+Select:
+0: Add Account
+1: Make Deposit
+2: Make Withdrawal
+3: Check Account
+4: Exit
+2
+Enter the Account Number : 2
+Enter Amount : 900
+Enter the date yyyy-mm-dd> 2021-12-09
+
+Withdraw from Account 2 amount: $900 on 2021-12-09 New Balance : $348
+
+--------------------------------------------------------
+
+Select:
+0: Add Account
+1: Make Deposit
+2: Make Withdrawal
+3: Check Account
+4: Exit
+3
+Enter Account Number :
+2
+
+Account Details :
+Owner : Sara
+Address : Calgary
+Account No. : 2
+Balance : 344.5
+Type of Account : Student
+
+Transactions Detail :
+
+DEP     2020-12-10      $1200   $1200
+
+INT CR  2021-11-01      $48     $1248
+
+WD      2021-12-09      $900    $348
+
+CHKCHG  2021-11-01      $3.5    $344.5
+
+
+--------------------------------------------------------
+
+Select:
+0: Add Account
+1: Make Deposit
+2: Make Withdrawal
+3: Check Account
+4: Exit
+4

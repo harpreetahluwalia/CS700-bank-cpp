@@ -15,7 +15,7 @@ Transaction::Transaction(){
 
 void Transaction::to_string(){
 
-    cout<<"\n"<<transaction_tpye<<"\t"<<date<<"\t"<<amount<<"\t"<<balance<<"\n";
+    cout<<"\n"<<transaction_tpye<<"\t"<<date<<"\t$"<<amount<<"\t$"<<balance<<"\n";
 }
 
 Transaction::~Transaction()

@@ -10,7 +10,7 @@ using namespace std;
 class Customer
 {
     public:
-        Customer(string n,string a,long t, int x);
+        Customer(string n,string a,long long t, int x);
         Customer();
      //   virtual ~Customer();
 
@@ -23,7 +23,7 @@ class Customer
             return address;
         }
 
-        long get_telephone_number(){
+        int get_telephone_number(){
             return telephone_number;
         }
 
@@ -98,7 +98,7 @@ class Customer
 
         string name;
         string address;
-        long telephone_number;
+        long long telephone_number;
         int age;
         int customer_number;
 };

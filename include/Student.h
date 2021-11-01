@@ -10,7 +10,7 @@ class Student : public Customer
 
 
 
-        Student(string name,string address,long telephone_number,int age);
+        Student(string name,string address,long long telephone_number,int age);
 
 
         Student();
@@ -23,7 +23,7 @@ class Student : public Customer
 
         float const SAVINGS_INTEREST = 8;
         float const CHECK_INTEREST = 4;
-        float const CHECK_CHARGE = 75 ;
+        float const CHECK_CHARGE = 3.5 ;
         float const OVERDRAFT_PENALTY = 35;
 
 };

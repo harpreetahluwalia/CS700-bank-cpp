@@ -3,14 +3,8 @@
 
 Account::Account()
 {
-    //ctor
     account_number = 0;
 
-
- //   for (int i=0; i<sizeof(transactions_array); i++){
-
-   //     transactions_array[i] = new Transaction();
-   // }
 }
 
 long accNo = 1;
@@ -20,7 +14,6 @@ void Account::createAccount(float b, Customer c){
             customer = c;
             account_number = accNo;
             accNo = accNo + 1;
-
 
 }
 
@@ -33,12 +26,15 @@ void Account::deposit(float amount){
 
 
 bool Account::withdraw(float amount){
-
-    if (this->balance >= amount){
-    this->balance = this->balance - amount;
-}
-    else
+    if (amount > balance){
         return false;
+    }
+
+ //   if (this->balance >= amount){
+    else{
+        balance = balance - amount;
+        return true;
+    }
 
 }
 
@@ -46,13 +42,14 @@ bool Account::withdraw(float amount){
 void Account::add_transaction(Transaction* transaction){
 
     transactions_array[noOfTrans] = transaction;
-  //  transaction->set_temp();
     this->noOfTrans = this->noOfTrans + 1;
-  //  this->t = this->t + 1;
 }
 
 void Account::get_transaction(){
-        cout<<"\nTransaction Details : \n";
+        cout<<"\nTransactions Detail : \n";
+        if (noOfTrans == 0){
+            cout<<"\nNo transactions detail available. ";
+        }
         for (int i=0 ; i<noOfTrans; i++){
 
             if(transactions_array[i] != nullptr){
@@ -61,7 +58,6 @@ void Account::get_transaction(){
             else{
                 break;
             }
-
         }
 
 }
@@ -77,7 +73,7 @@ float Account::interest(float interest){
 
 void Account::to_string(){
 
-cout<<"\nAccount Details : \nOwner : "<<customer.get_name()<<"\nAddress : "<<customer.get_address()<<"\nAccount No. : "<<account_number<<"\nBalance : "<<balance<<"\n";
+cout<<"\nAccount Details : \nOwner : "<<customer.get_name()<<"\nAddress : "<<customer.get_address()<<"\nAccount No. : "<<account_number<<"\nBalance : "<<balance<<"\nType of Account : "<<customer.get_typeAcc()<<"\n";
 get_transaction();
 }
 

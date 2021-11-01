@@ -52,16 +52,9 @@ void Bank::add_account(Account* acc){
 
 float Bank::get_interest(long accNo){
 
-float interest_rate;
-float interest;
+    float interest_rate;
+    float interest;
 
-
-
-    //    if (get_account(accNo)->get_customer().get_typeAcc() == "Senior"){
-
-
-
-   //     }
 
     Checking_Account* ch = dynamic_cast<Checking_Account*>(get_account(accNo));
     if (ch == nullptr){
@@ -76,6 +69,28 @@ float interest;
 
     interest = get_account(accNo)->interest(interest_rate);
     return interest;
+
+}
+
+
+float Bank::check_Charges(long accNo){
+
+    float check_charges;
+
+    Checking_Account* ch = dynamic_cast<Checking_Account*>(get_account(accNo));
+    if (ch == nullptr){
+        //Its saving account
+        // No checking charges on saving account.
+        return 0;
+       // interest_rate = get_account(accNo)->get_customer().get_save_int();
+        //cout << "null -- Not Checking" << endl;
+        }
+    else{
+        float check_charges = get_account(accNo)->get_customer().get_check_ch();
+        return check_charges;
+        //Its checking account
+       // interest_rate = get_account(accNo)->get_customer().get_check_int();
+    }
 
 }
 Account* Bank::get_account(long accNo){

@@ -7,7 +7,7 @@
 class Adult : public Customer
 {
     public:
-        Adult(string name,string address,long telephone_number,int age);
+        Adult(string name,string address,long long telephone_number,int age);
 
 
 
@@ -28,7 +28,7 @@ class Adult : public Customer
 
         float const SAVINGS_INTEREST = 5;
         float const CHECK_INTEREST = 3;
-        float const CHECK_CHARGE = 100 ;
+        float const CHECK_CHARGE = 5 ;
         float const OVERDRAFT_PENALTY = 50;
 
 

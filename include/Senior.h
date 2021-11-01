@@ -11,7 +11,7 @@ class Senior : public Customer
 
 
 
-        Senior(string name,string address,long telephone_number,int age);
+        Senior(string name,string address,long long telephone_number,int age);
        // Senior(string name,string address,long telephone_number,int age);
 
         Senior();
@@ -27,7 +27,7 @@ class Senior : public Customer
     private:
         float const SAVINGS_INTEREST = 10;
         float const CHECK_INTEREST = 5;
-        float const CHECK_CHARGE = 50 ;
+        float const CHECK_CHARGE = 2.5 ;
         float const OVERDRAFT_PENALTY = 25;
 
 };

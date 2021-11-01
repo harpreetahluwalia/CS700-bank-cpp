@@ -6,7 +6,7 @@
 
 
 //}
-Senior::Senior(string name,string address,long telephone_number,int age):Customer(name,address,telephone_number,age){
+Senior::Senior(string name,string address,long long telephone_number,int age):Customer(name,address,telephone_number,age){
 
         save_int=SAVINGS_INTEREST;
         check_int=CHECK_INTEREST;
