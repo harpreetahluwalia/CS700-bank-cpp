@@ -8,6 +8,8 @@ Student::Student(string name,string address,long telephone_number,int age):Custo
         check_int=CHECK_INTEREST;
         check_ch=CHECK_CHARGE;
         o_penalty=OVERDRAFT_PENALTY;
+        typeAcc = "Student";
+
 
 
 }

@@ -52,7 +52,7 @@ void Account::add_transaction(Transaction* transaction){
 }
 
 void Account::get_transaction(){
-
+        cout<<"\nTransaction Details : \n";
         for (int i=0 ; i<noOfTrans; i++){
 
             if(transactions_array[i] != nullptr){
@@ -77,6 +77,8 @@ float Account::interest(float interest){
 
 void Account::to_string(){
 
+cout<<"\nAccount Details : \nOwner : "<<customer.get_name()<<"\nAddress : "<<customer.get_address()<<"\nAccount No. : "<<account_number<<"\nBalance : "<<balance<<"\n";
+get_transaction();
 }
 
 

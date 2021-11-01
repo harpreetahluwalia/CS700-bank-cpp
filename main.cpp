@@ -22,8 +22,9 @@ int main()
     Bank bank;
     while (n!=4){
 
-
+        cout<<"\n\n--------------------------------------------------------\n";
         cout<< "\nSelect: \n0: Add Account\n1: Make Deposit\n2: Make Withdrawal\n3: Check Account\n4: Exit \n";
+
         cin>>n;
         if (n==0){
             string name;
@@ -287,16 +288,15 @@ int main()
         if(bank.get_account(accountNo) == nullptr){
                     continue;
                 }
-            float balance;
-            balance = bank.balance(accountNo);
           //  Account* account = bank.get_account(accountNo);
 //            ban
+            bank.get_account(accountNo)->to_string();
 
           //  if (account.get_account_number() != 0){
-                cout<<"\nAccount No : " << bank.get_account(accountNo)->get_account_number();
-                cout<<"\nOwner : "<< bank.get_account(accountNo)->get_customer().get_name();
-           // cout<<"Type of Account : "<<
-                cout<<"\nBalance : "<< balance;
+            cout<<"\nAccount No : " << bank.get_account(accountNo)->get_account_number();
+            cout<<"\nOwner : "<< bank.get_account(accountNo)->get_customer().get_name();
+            cout<<"\nBalance : "<< bank.balance(accountNo);
+            cout<<"\nTpye of Acc : "<<bank.get_account(accountNo)->get_customer().get_typeAcc();
             cout<<"\nTransactions Details : \n";
             bank.get_account(accountNo)->get_transaction();
 

@@ -79,13 +79,17 @@ class Customer
 
         virtual float const &get_interest(){};
 
+        string get_typeAcc(){
+            return typeAcc;
 
+        }
 
     protected:
         float save_int;
         float check_int;
         float check_ch ;
         float o_penalty;
+        string typeAcc;
 
 
     private:

@@ -55,6 +55,14 @@ float Bank::get_interest(long accNo){
 float interest_rate;
 float interest;
 
+
+
+    //    if (get_account(accNo)->get_customer().get_typeAcc() == "Senior"){
+
+
+
+   //     }
+
     Checking_Account* ch = dynamic_cast<Checking_Account*>(get_account(accNo));
     if (ch == nullptr){
         //Its saving account
