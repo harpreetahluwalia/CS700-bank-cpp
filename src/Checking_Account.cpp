@@ -1,6 +1,6 @@
 #include "Checking_Account.h"
 /**
- *  @file   Checking_Account.h
+ *  @file   Checking_Account.cpp
  *  @author Harpreet Singh
  *  @brief  It includes Checking Account objects.
  *  @date   29/10/2021

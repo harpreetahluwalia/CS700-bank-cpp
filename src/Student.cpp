@@ -1,5 +1,5 @@
 /**
- *  @file   Student.h
+ *  @file   Student.cpp
  *  @author Harpreet Singh
  *  @brief  It includes Customer type Student details and extends customer class.
  *  @date   29/10/2021

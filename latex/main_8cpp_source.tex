@@ -1,0 +1,228 @@
+\hypertarget{main_8cpp_source}{}\doxysection{main.\+cpp}
+\mbox{\hyperlink{main_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00025}00025 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00026}00026 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00029}00029 \textcolor{comment}{// Including header files}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00031}00031 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_customer_8h}{Customer.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00032}00032 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_senior_8h}{Senior.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00033}00033 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_student_8h}{Student.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00034}00034 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_adult_8h}{Adult.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00035}00035 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_account_8h}{Account.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00036}00036 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_checking___account_8h}{Checking\_Account.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00037}00037 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_savings___account_8h}{Savings\_Account.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00038}00038 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_date_8h}{Date.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00039}00039 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_bank_8h}{Bank.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00049}\mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{00049}} \textcolor{keywordtype}{int} \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}()}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00050}00050 \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00051}00051  cout<<\textcolor{stringliteral}{"{}\(\backslash\)n Assignment 3 -\/ CS700 -\/ Harpreet Singh"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00052}00052     \textcolor{keywordtype}{int} n = 0;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00053}00053     \mbox{\hyperlink{class_bank}{Bank}} bank;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00054}00054     \textcolor{keywordflow}{while} (n!=4)\{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00056}00056         cout<<\textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)n-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00057}00057         cout<< \textcolor{stringliteral}{"{}\(\backslash\)nSelect: \(\backslash\)n0: Add Account\(\backslash\)n1: Make Deposit\(\backslash\)n2: Make Withdrawal\(\backslash\)n3: Check Account\(\backslash\)n4: Exit \(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00059}00059         cin>>n;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00060}00060         \textcolor{keywordflow}{if} (n==0)\{              \textcolor{comment}{// if 0.Add Account option is selected}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00061}00061             \textcolor{keywordtype}{string} name;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00062}00062             \textcolor{keywordtype}{string} address;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00063}00063             \textcolor{keywordtype}{int} age;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00064}00064             \textcolor{keywordtype}{long} \textcolor{keywordtype}{long} telephone\_number;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00065}00065                 cout << \textcolor{stringliteral}{"{}Enter Customer Name : "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00066}00066                 cin>>name;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00067}00067                 cout<< \textcolor{stringliteral}{"{}Enter Customer Address : "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00068}00068                 cin >> address;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00069}00069                 cout<< \textcolor{stringliteral}{"{}Enter Customer Age : "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00070}00070                 cin >> age;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00071}00071                 cout << \textcolor{stringliteral}{"{}Enter Customer Phone Number : "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00072}00072                 cin >> telephone\_number;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00073}00073                 \textcolor{keywordtype}{int} temp1;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00074}00074                 \textcolor{keywordtype}{int} temp2;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00075}00075                 cout<<\textcolor{stringliteral}{"{}\(\backslash\)nSelect : \(\backslash\)n0: Senior\(\backslash\)n1: Adult\(\backslash\)n2: Student\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00076}00076                 cin>>temp1;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00077}00077                 cout<<\textcolor{stringliteral}{"{}\(\backslash\)nSelect:\(\backslash\)n0: Checking\(\backslash\)n1: Savings\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00078}00078                 cin>>temp2;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00080}00080                 \textcolor{keywordtype}{float} balance = 0.0;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00081}00081                 \textcolor{keywordflow}{if} (temp2 == 0)\{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00082}00082                     \textcolor{keywordflow}{if} (temp1 == 0)\{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00084}00084                         \mbox{\hyperlink{class_senior}{Senior}} senior(name, address, telephone\_number,age);   \textcolor{comment}{// Created Senior class object}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00085}00085                         \mbox{\hyperlink{class_account}{Account}}* checking\_account = \textcolor{keyword}{new} \mbox{\hyperlink{class_checking___account}{Checking\_Account}};   \textcolor{comment}{// Created Account object pointer to checking account using assignments in class hierarchy}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00086}00086                         checking\_account-\/>\mbox{\hyperlink{class_account_aace4d9111a9ad1fa333dbf3b3602be96}{createAccount}}(balance,senior); \textcolor{comment}{//calling createAccount method with account pointer}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00087}00087                         bank.\mbox{\hyperlink{class_bank_a20fa5f256d3b36508a10fdfe6f8bdc31}{add\_account}}(checking\_account);                 \textcolor{comment}{// adding account to Accounts* array in bank class}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00088}00088                     \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00089}00089                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(temp1 == 1)\{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00090}00090                         \mbox{\hyperlink{class_adult}{Adult}} adult(name, address, telephone\_number,age);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00091}00091                         \mbox{\hyperlink{class_account}{Account}}* checking\_account = \textcolor{keyword}{new} \mbox{\hyperlink{class_checking___account}{Checking\_Account}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00092}00092                         checking\_account-\/>\mbox{\hyperlink{class_account_aace4d9111a9ad1fa333dbf3b3602be96}{createAccount}}(balance,adult);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00093}00093                         bank.\mbox{\hyperlink{class_bank_a20fa5f256d3b36508a10fdfe6f8bdc31}{add\_account}}(checking\_account);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00094}00094                     \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00095}00095                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (temp1 = 2)\{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00096}00096                         \mbox{\hyperlink{class_student}{Student}} student(name, address, telephone\_number,age);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00097}00097                         \mbox{\hyperlink{class_account}{Account}}* checking\_account = \textcolor{keyword}{new} \mbox{\hyperlink{class_checking___account}{Checking\_Account}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00098}00098                         checking\_account-\/>\mbox{\hyperlink{class_account_aace4d9111a9ad1fa333dbf3b3602be96}{createAccount}}(balance,student);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00099}00099                         bank.\mbox{\hyperlink{class_bank_a20fa5f256d3b36508a10fdfe6f8bdc31}{add\_account}}(checking\_account);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00100}00100                     \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00101}00101                 \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00102}00102                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (temp2 == 1)\{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00103}00103                     \textcolor{keywordflow}{if} (temp1 == 0)\{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00104}00104                         \mbox{\hyperlink{class_senior}{Senior}} senior(name, address, telephone\_number,age);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00105}00105                         \mbox{\hyperlink{class_account}{Account}}* savings\_account = \textcolor{keyword}{new} \mbox{\hyperlink{class_savings___account}{Savings\_Account}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00106}00106                         savings\_account-\/>\mbox{\hyperlink{class_account_aace4d9111a9ad1fa333dbf3b3602be96}{createAccount}}(balance,senior);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00107}00107                         bank.\mbox{\hyperlink{class_bank_a20fa5f256d3b36508a10fdfe6f8bdc31}{add\_account}}(savings\_account);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00108}00108                     \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00109}00109                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(temp1 == 1)\{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00110}00110                         \mbox{\hyperlink{class_adult}{Adult}} adult(name, address, telephone\_number,age);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00111}00111                         \mbox{\hyperlink{class_account}{Account}}* savings\_account = \textcolor{keyword}{new} \mbox{\hyperlink{class_savings___account}{Savings\_Account}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00112}00112                         savings\_account-\/>\mbox{\hyperlink{class_account_aace4d9111a9ad1fa333dbf3b3602be96}{createAccount}}(balance,adult);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00113}00113                         bank.\mbox{\hyperlink{class_bank_a20fa5f256d3b36508a10fdfe6f8bdc31}{add\_account}}(savings\_account);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00114}00114 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00115}00115                     \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00116}00116                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (temp1 = 2)\{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00117}00117                         \mbox{\hyperlink{class_student}{Student}} student(name, address, telephone\_number,age);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00118}00118                         \mbox{\hyperlink{class_account}{Account}}* savings\_account = \textcolor{keyword}{new} \mbox{\hyperlink{class_savings___account}{Savings\_Account}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00119}00119                         savings\_account-\/>\mbox{\hyperlink{class_account_aace4d9111a9ad1fa333dbf3b3602be96}{createAccount}}(balance,student);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00120}00120                         bank.\mbox{\hyperlink{class_bank_a20fa5f256d3b36508a10fdfe6f8bdc31}{add\_account}}(savings\_account);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00121}00121                     \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00122}00122                 \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00123}00123         \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00124}00124         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (n==1)\{  \textcolor{comment}{// if Make deposit option is selected}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00125}00125                 \textcolor{keywordtype}{long} \mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00126}00126                 cout<<\textcolor{stringliteral}{"{}Enter the Account Number : "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00127}00127                 cin>>\mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00128}00128                 \textcolor{keywordflow}{if}(bank.\mbox{\hyperlink{class_bank_a42003949823476f3fbb5c4320d0a1c3a}{get\_account}}(\mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}}) == \textcolor{keyword}{nullptr})\{         \textcolor{comment}{// Checking for incorrect account number by user}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00129}00129                     \textcolor{keywordflow}{continue};                         \textcolor{comment}{// if its incorrect account no. it will continue to next the loop iteration.}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00130}00130                 \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00131}00131                 \textcolor{keywordtype}{float} amount;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00132}00132                 cout<<\textcolor{stringliteral}{"{}Enter Amount : "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00133}00133                 cin>>amount;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00134}00134                 \textcolor{keywordtype}{string} d;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00135}00135 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00136}00136                 \textcolor{comment}{// taking date in yyyy-\/mm-\/dd format and passing that to Date Class object after splitting in day,month and year.}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00137}00137                 cout<<\textcolor{stringliteral}{"{}Enter the date yyyy-\/mm-\/dd> "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00138}00138                 cin>>d;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00139}00139                 \textcolor{keywordtype}{int} year = stoi(d.substr(0,4));}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00140}00140                 \textcolor{keywordtype}{int} month = stoi(d.substr(5,6));}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00141}00141                 \textcolor{keywordtype}{int} day = stoi(d.substr(8,9));}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00142}00142                 \mbox{\hyperlink{class_date}{Date}} date(day,month,year);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00143}00143 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00144}00144 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00145}00145                 bank.\mbox{\hyperlink{class_bank_a0971a5cdc0c92a4a50df4ecd3294af41}{make\_deposit}}(amount, \mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}});   \textcolor{comment}{// Calling the make deposit function to deposit in account}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00146}00146                 \mbox{\hyperlink{class_transaction}{Transaction}}* transaction = \textcolor{keyword}{new} \mbox{\hyperlink{class_transaction}{Transaction}}(\textcolor{stringliteral}{"{}DEP"{}}, amount, bank.\mbox{\hyperlink{class_bank_a42003949823476f3fbb5c4320d0a1c3a}{get\_account}}(\mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}})-\/>\mbox{\hyperlink{class_account_a97cb9a92bbbf686c9176d10c4950f386}{get\_balance}}(),date); \textcolor{comment}{// Creating transaction object}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00147}00147                 bank.\mbox{\hyperlink{class_bank_a42003949823476f3fbb5c4320d0a1c3a}{get\_account}}(\mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}})-\/>\mbox{\hyperlink{class_account_a4529df165c855405b9af08d8b7977162}{add\_transaction}}(transaction); \textcolor{comment}{// adding the transaction to transaction array}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00148}00148 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00149}00149                 \textcolor{comment}{// Displaying deposit message to user on console}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00150}00150                 cout<<\textcolor{stringliteral}{"{}Deposit in "{}}<<\mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}}<<\textcolor{stringliteral}{"{} , Amount : \$"{}}<<amount<<\textcolor{stringliteral}{"{} on "{}}<<date<<\textcolor{stringliteral}{"{} , New balance : \$"{}}<<bank.\mbox{\hyperlink{class_bank_a42003949823476f3fbb5c4320d0a1c3a}{get\_account}}(\mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}})-\/>\mbox{\hyperlink{class_account_a97cb9a92bbbf686c9176d10c4950f386}{get\_balance}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00151}00151 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00152}00152 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00153}00153 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00154}00154                 \textcolor{comment}{// Checking for Interest as per the the deposit time till today and adding to the account.}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00155}00155                 time\_t systime = time(0);           \textcolor{comment}{// creating system time object}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00156}00156                 \mbox{\hyperlink{class_date}{Date}} sysDate(systime);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00157}00157                 \textcolor{keywordtype}{int} diff\_in\_days = sysDate-\/date;       \textcolor{comment}{// diff\_in\_days represents no. of days from deposit till today.}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00158}00158                 \textcolor{keywordtype}{float} months = (diff\_in\_days/30);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00159}00159                 \textcolor{keywordtype}{float} total\_interest = bank.\mbox{\hyperlink{class_bank_a533098d40a70a2a55d35badabb610f7c}{get\_interest}}(\mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}});        \textcolor{comment}{// calling the get\_interest method}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00160}00160                 bank.\mbox{\hyperlink{class_bank_a0971a5cdc0c92a4a50df4ecd3294af41}{make\_deposit}}(total\_interest,\mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}});            \textcolor{comment}{// adding the interest to account}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00161}00161 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00162}00162                 \textcolor{comment}{// displaying the interest message to console}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00163}00163                 cout<<\textcolor{stringliteral}{"{}\(\backslash\)nIt is "{}}<<diff\_in\_days<<\textcolor{stringliteral}{"{} days old Deposit. Thus Interest \$"{}}<<total\_interest<<\textcolor{stringliteral}{"{} is credited to the account"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00164}00164 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00165}00165                 \textcolor{comment}{//creating interest credit transaction and adding to transactions array}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00166}00166                 \mbox{\hyperlink{class_transaction}{Transaction}}* interest\_transaction = \textcolor{keyword}{new} \mbox{\hyperlink{class_transaction}{Transaction}}(\textcolor{stringliteral}{"{}INT CR"{}}, total\_interest, bank.\mbox{\hyperlink{class_bank_a42003949823476f3fbb5c4320d0a1c3a}{get\_account}}(\mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}})-\/>\mbox{\hyperlink{class_account_a97cb9a92bbbf686c9176d10c4950f386}{get\_balance}}(),sysDate);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00167}00167                 bank.\mbox{\hyperlink{class_bank_a42003949823476f3fbb5c4320d0a1c3a}{get\_account}}(\mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}})-\/>\mbox{\hyperlink{class_account_a4529df165c855405b9af08d8b7977162}{add\_transaction}}(interest\_transaction);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00168}00168 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00169}00169         \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00170}00170 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00171}00171         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (n==2)\{   \textcolor{comment}{// if make withdrawal option is selected}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00172}00172                 \textcolor{keywordtype}{long} \mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00173}00173                 cout<<\textcolor{stringliteral}{"{}Enter the Account Number : "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00174}00174                 cin>>\mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00175}00175                 \textcolor{keywordflow}{if}(bank.\mbox{\hyperlink{class_bank_a42003949823476f3fbb5c4320d0a1c3a}{get\_account}}(\mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}}) == \textcolor{keyword}{nullptr})\{  \textcolor{comment}{// Checking for incorrect account number by user}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00176}00176                     \textcolor{keywordflow}{continue};           \textcolor{comment}{// if its incorrect account no. it will continue to next the loop iteration.}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00177}00177                 \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00178}00178 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00179}00179                 \textcolor{keywordtype}{float} amount;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00180}00180                 cout<<\textcolor{stringliteral}{"{}Enter Amount : "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00181}00181                 cin>>amount;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00182}00182                 \textcolor{keywordtype}{string} d;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00183}00183                 cout<<\textcolor{stringliteral}{"{}Enter the date yyyy-\/mm-\/dd> "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00184}00184 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00185}00185                 \textcolor{comment}{// taking date in yyyy-\/mm-\/dd format and passing that to Date Class object after splitting in day,month and year.}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00186}00186                 cin>>d;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00187}00187                 \textcolor{keywordtype}{int} year = stoi(d.substr(0,4));}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00188}00188                 \textcolor{keywordtype}{int} month = stoi(d.substr(5,6));}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00189}00189                 \textcolor{keywordtype}{int} day = stoi(d.substr(8,9));}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00190}00190                 \mbox{\hyperlink{class_date}{Date}} date(day,month,year);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00191}00191 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00192}00192                 \textcolor{comment}{// making the withdrawl and also checking if there is sufficient balance is in account, if not it will display the message}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00193}00193                 \textcolor{keywordflow}{if}(!(bank.\mbox{\hyperlink{class_bank_ac7e5fe8aca9effae1464fa59aaee51ae}{make\_withdrawl}}(amount,\mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}})))\{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00194}00194                     cout<<\textcolor{stringliteral}{"{}Insufficient Funds available, please try again. \(\backslash\)nYour current balance is : \$"{}}<< bank.\mbox{\hyperlink{class_bank_a42003949823476f3fbb5c4320d0a1c3a}{get\_account}}(\mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}})-\/>\mbox{\hyperlink{class_account_a97cb9a92bbbf686c9176d10c4950f386}{get\_balance}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00195}00195                     \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00196}00196                 \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00197}00197 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00198}00198                 \textcolor{comment}{//creating transaction object and adding to transactions array}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00199}00199 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00200}00200                 \mbox{\hyperlink{class_transaction}{Transaction}}* transaction1 = \textcolor{keyword}{new} \mbox{\hyperlink{class_transaction}{Transaction}}(\textcolor{stringliteral}{"{}WD"{}}, amount, bank.\mbox{\hyperlink{class_bank_a42003949823476f3fbb5c4320d0a1c3a}{get\_account}}(\mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}})-\/>\mbox{\hyperlink{class_account_a97cb9a92bbbf686c9176d10c4950f386}{get\_balance}}(),date);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00201}00201                 bank.\mbox{\hyperlink{class_bank_a42003949823476f3fbb5c4320d0a1c3a}{get\_account}}(\mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}})-\/>\mbox{\hyperlink{class_account_a4529df165c855405b9af08d8b7977162}{add\_transaction}}(transaction1);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00202}00202 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00203}00203                 \textcolor{comment}{// displaying the withdraw message to the console}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00204}00204 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00205}00205                 cout<<\textcolor{stringliteral}{"{}\(\backslash\)nWithdraw from Account "{}}<<bank.\mbox{\hyperlink{class_bank_a42003949823476f3fbb5c4320d0a1c3a}{get\_account}}(\mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}})-\/>\mbox{\hyperlink{class_account_ae6073de78896d2759fa9bcffe276826c}{get\_account\_number}}()<<\textcolor{stringliteral}{"{} amount: \$"{}}<<amount<<\textcolor{stringliteral}{"{} on "{}}<<date<< \textcolor{stringliteral}{"{} New Balance : \$"{}}<<bank.\mbox{\hyperlink{class_bank_a42003949823476f3fbb5c4320d0a1c3a}{get\_account}}(\mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}})-\/>\mbox{\hyperlink{class_account_a97cb9a92bbbf686c9176d10c4950f386}{get\_balance}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00206}00206 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00207}00207 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00208}00208 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00209}00209                 \textcolor{comment}{// Checking for Checking Charges}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00210}00210 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00211}00211                 \textcolor{keywordtype}{float} check\_charges = bank.\mbox{\hyperlink{class_bank_afc0429f282e1a4e06d259cc8bcf98ee1}{check\_Charges}}(\mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}});        \textcolor{comment}{//check\_charges() will calculate the checking charges}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00212}00212                 \textcolor{keywordflow}{if} (check\_charges!=0)\{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00213}00213                     bank.\mbox{\hyperlink{class_bank_ac7e5fe8aca9effae1464fa59aaee51ae}{make\_withdrawl}}(check\_charges,\mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00214}00214                     time\_t systime = time(0);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00215}00215                     \mbox{\hyperlink{class_date}{Date}} sysDate(systime);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00216}00216                     \mbox{\hyperlink{class_transaction}{Transaction}}* transaction = \textcolor{keyword}{new} \mbox{\hyperlink{class_transaction}{Transaction}}(\textcolor{stringliteral}{"{}CHKCHG "{}}, check\_charges, bank.\mbox{\hyperlink{class_bank_a42003949823476f3fbb5c4320d0a1c3a}{get\_account}}(\mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}})-\/>\mbox{\hyperlink{class_account_a97cb9a92bbbf686c9176d10c4950f386}{get\_balance}}(),sysDate);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00217}00217                     bank.\mbox{\hyperlink{class_bank_a42003949823476f3fbb5c4320d0a1c3a}{get\_account}}(\mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{accNo}})-\/>\mbox{\hyperlink{class_account_a4529df165c855405b9af08d8b7977162}{add\_transaction}}(transaction);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00218}00218                 \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00219}00219         \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00220}00220 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00221}00221 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00222}00222         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (n==3)\{         \textcolor{comment}{// if check account option is selected.}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00223}00223 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00224}00224 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00225}00225             \textcolor{keywordtype}{long} accountNo;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00226}00226             cout<<\textcolor{stringliteral}{"{}Enter Account Number : \(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00227}00227             cin>>accountNo;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00228}00228             \textcolor{keywordflow}{if}(bank.\mbox{\hyperlink{class_bank_a42003949823476f3fbb5c4320d0a1c3a}{get\_account}}(accountNo) == \textcolor{keyword}{nullptr})\{         \textcolor{comment}{// Checking for incorrect account number by user}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00229}00229                 \textcolor{keywordflow}{continue};                   \textcolor{comment}{// if its incorrect account no. it will continue to next the loop iteration.}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00230}00230             \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00231}00231 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00232}00232             \textcolor{comment}{// Printing the account details}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00233}00233             bank.\mbox{\hyperlink{class_bank_a42003949823476f3fbb5c4320d0a1c3a}{get\_account}}(accountNo)-\/>\mbox{\hyperlink{class_account_a1053d190b4ef7804cb2e8b8e41bcecac}{to\_string}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00234}00234 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00235}00235             \textcolor{comment}{// Alternative to print with more flexibility here :}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00236}00236 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00237}00237            \textcolor{comment}{// cout<<"{}\(\backslash\)nAccount No : "{} << bank.get\_account(accountNo)-\/>get\_account\_number();}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00238}00238            \textcolor{comment}{// cout<<"{}\(\backslash\)nOwner : "{}<< bank.get\_account(accountNo)-\/>get\_customer().get\_name();}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00239}00239            \textcolor{comment}{// cout<<"{}\(\backslash\)nBalance : "{}<< bank.balance(accountNo);}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00240}00240            \textcolor{comment}{// cout<<"{}\(\backslash\)nTpye of Acc : "{}<<bank.get\_account(accountNo)-\/>get\_customer().get\_typeAcc();}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00241}00241            \textcolor{comment}{// cout<<"{}\(\backslash\)nTransactions Details : \(\backslash\)n"{};}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00242}00242            \textcolor{comment}{// bank.get\_account(accountNo)-\/>get\_transaction();}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00243}00243     \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00244}00244         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (n==4)\{         \textcolor{comment}{//if exit option is selected}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00245}00245             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00246}00246     \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00247}00247         \textcolor{keywordflow}{else} \{              \textcolor{comment}{// if incorrect option is selected}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00248}00248             cout<<\textcolor{stringliteral}{"{}\(\backslash\)nPlease choose Correct Option. \(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00249}00249         \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00250}00250 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00251}00251     \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00252}00252 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00253}00253 \}}
+
+\end{DoxyCode}

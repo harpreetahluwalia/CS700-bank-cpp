@@ -1,5 +1,5 @@
 /**
- *  @file   Customer.h
+ *  @file   Customer.cpp
  *  @author Harpreet Singh
  *  @brief  It Customer data such as customer name, address, phone number etc.
  *  @date   29/10/2021

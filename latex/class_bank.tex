@@ -1,0 +1,289 @@
+\hypertarget{class_bank}{}\doxysection{Bank Class Reference}
+\label{class_bank}\index{Bank@{Bank}}
+
+
+{\ttfamily \#include $<$Bank.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bank_a95972e189e85e1a572348811a8bf0d57}{Bank}} ()
+\item 
+virtual \mbox{\hyperlink{class_bank_a86eb33b90cf9dbf0a528155c5bfde004}{$\sim$\+Bank}} ()
+\item 
+void \mbox{\hyperlink{class_bank_a20fa5f256d3b36508a10fdfe6f8bdc31}{add\+\_\+account}} (\mbox{\hyperlink{class_account}{Account}} $\ast$acc)
+\begin{DoxyCompactList}\small\item\em It adds the account to Accounts array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bank_a0971a5cdc0c92a4a50df4ecd3294af41}{make\+\_\+deposit}} (float amount, long \mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{acc\+No}})
+\begin{DoxyCompactList}\small\item\em It deposits the amount to the account. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bank_ac7e5fe8aca9effae1464fa59aaee51ae}{make\+\_\+withdrawl}} (float amount, long \mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{acc\+No}})
+\begin{DoxyCompactList}\small\item\em It withdraws the amount from the the account and also returns bool value if withdraw was successful. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_bank_acebf4799e7c7d83e0d8807af2b0df227}{balance}} (long \mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{acc\+No}})
+\begin{DoxyCompactList}\small\item\em It is used to fetch the balance of the account. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_bank_afc0429f282e1a4e06d259cc8bcf98ee1}{check\+\_\+\+Charges}} (long \mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{acc\+No}})
+\begin{DoxyCompactList}\small\item\em It returns the total check charges amount based on the type of account. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_bank_a533098d40a70a2a55d35badabb610f7c}{get\+\_\+interest}} (long \mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{acc\+No}})
+\begin{DoxyCompactList}\small\item\em It returns the total interest amount based on the type of account. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_account}{Account}} $\ast$ \mbox{\hyperlink{class_bank_a42003949823476f3fbb5c4320d0a1c3a}{get\+\_\+account}} (long \mbox{\hyperlink{_account_8cpp_a527901f2aba16d913ea0b3915b0cfd8d}{acc\+No}})
+\begin{DoxyCompactList}\small\item\em It returns \mbox{\hyperlink{class_account}{Account}} class object based on account number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_account}{Account}} $\ast$ \mbox{\hyperlink{class_bank_a370f5f3482fbd896e2bccd648db54c1f}{array\+\_\+accounts}} \mbox{[}15\mbox{]}
+\item 
+int \mbox{\hyperlink{class_bank_a47f0ec2f9807d48ec1722afce6b2491e}{No\+Of\+Acc}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_bank_8h_source_l00010}{10}} of file \mbox{\hyperlink{_bank_8h_source}{Bank.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bank_a95972e189e85e1a572348811a8bf0d57}\label{class_bank_a95972e189e85e1a572348811a8bf0d57}} 
+\index{Bank@{Bank}!Bank@{Bank}}
+\index{Bank@{Bank}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{Bank()}{Bank()}}
+{\footnotesize\ttfamily Bank\+::\+Bank (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_bank_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{_bank_8cpp_source}{Bank.\+cpp}}.
+
+\mbox{\Hypertarget{class_bank_a86eb33b90cf9dbf0a528155c5bfde004}\label{class_bank_a86eb33b90cf9dbf0a528155c5bfde004}} 
+\index{Bank@{Bank}!````~Bank@{$\sim$Bank}}
+\index{````~Bank@{$\sim$Bank}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{$\sim$Bank()}{~Bank()}}
+{\footnotesize\ttfamily Bank\+::$\sim$\+Bank (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{_bank_8cpp_source_l00143}{143}} of file \mbox{\hyperlink{_bank_8cpp_source}{Bank.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bank_a20fa5f256d3b36508a10fdfe6f8bdc31}\label{class_bank_a20fa5f256d3b36508a10fdfe6f8bdc31}} 
+\index{Bank@{Bank}!add\_account@{add\_account}}
+\index{add\_account@{add\_account}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{add\_account()}{add\_account()}}
+{\footnotesize\ttfamily void Bank\+::add\+\_\+account (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_account}{Account}} $\ast$}]{acc }\end{DoxyParamCaption})}
+
+
+
+It adds the account to Accounts array. 
+
+Method \+: \mbox{\hyperlink{class_bank_a20fa5f256d3b36508a10fdfe6f8bdc31}{add\+\_\+account()}} \begin{DoxyAuthor}{Author}
+Harpreet Singh 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+29-\/10-\/2021 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em Acc} & It represents the class Array object pointer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_bank_8cpp_source_l00026}{26}} of file \mbox{\hyperlink{_bank_8cpp_source}{Bank.\+cpp}}.
+
+\mbox{\Hypertarget{class_bank_acebf4799e7c7d83e0d8807af2b0df227}\label{class_bank_acebf4799e7c7d83e0d8807af2b0df227}} 
+\index{Bank@{Bank}!balance@{balance}}
+\index{balance@{balance}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{balance()}{balance()}}
+{\footnotesize\ttfamily float Bank\+::balance (\begin{DoxyParamCaption}\item[{long}]{acc\+No }\end{DoxyParamCaption})}
+
+
+
+It is used to fetch the balance of the account. 
+
+Method \+: \mbox{\hyperlink{class_bank_acebf4799e7c7d83e0d8807af2b0df227}{balance()}} \begin{DoxyAuthor}{Author}
+Harpreet Singh 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+29-\/10-\/2021 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em acc\+No} & It represents the account number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return balance
+\end{DoxyReturn}
+Method \+: \mbox{\hyperlink{class_bank_acebf4799e7c7d83e0d8807af2b0df227}{balance()}} \begin{DoxyAuthor}{Author}
+Harpreet Singh 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+29-\/10-\/2021 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em acc\+No} & It represents the account number \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_bank_8cpp_source_l00138}{138}} of file \mbox{\hyperlink{_bank_8cpp_source}{Bank.\+cpp}}.
+
+\mbox{\Hypertarget{class_bank_afc0429f282e1a4e06d259cc8bcf98ee1}\label{class_bank_afc0429f282e1a4e06d259cc8bcf98ee1}} 
+\index{Bank@{Bank}!check\_Charges@{check\_Charges}}
+\index{check\_Charges@{check\_Charges}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{check\_Charges()}{check\_Charges()}}
+{\footnotesize\ttfamily float Bank\+::check\+\_\+\+Charges (\begin{DoxyParamCaption}\item[{long}]{acc\+No }\end{DoxyParamCaption})}
+
+
+
+It returns the total check charges amount based on the type of account. 
+
+Method \+: \mbox{\hyperlink{class_bank_afc0429f282e1a4e06d259cc8bcf98ee1}{check\+\_\+\+Charges()}} \begin{DoxyAuthor}{Author}
+Harpreet Singh 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+29-\/10-\/2021 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em acc\+No} & It represents the account number \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_bank_8cpp_source_l00065}{65}} of file \mbox{\hyperlink{_bank_8cpp_source}{Bank.\+cpp}}.
+
+\mbox{\Hypertarget{class_bank_a42003949823476f3fbb5c4320d0a1c3a}\label{class_bank_a42003949823476f3fbb5c4320d0a1c3a}} 
+\index{Bank@{Bank}!get\_account@{get\_account}}
+\index{get\_account@{get\_account}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{get\_account()}{get\_account()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_account}{Account}} $\ast$ Bank\+::get\+\_\+account (\begin{DoxyParamCaption}\item[{long}]{acc\+No }\end{DoxyParamCaption})}
+
+
+
+It returns \mbox{\hyperlink{class_account}{Account}} class object based on account number. 
+
+Method \+: \mbox{\hyperlink{class_bank_a42003949823476f3fbb5c4320d0a1c3a}{get\+\_\+account()}} \begin{DoxyAuthor}{Author}
+Harpreet Singh 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+29-\/10-\/2021 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em acc\+No} & It represents the account number \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_bank_8cpp_source_l00089}{89}} of file \mbox{\hyperlink{_bank_8cpp_source}{Bank.\+cpp}}.
+
+\mbox{\Hypertarget{class_bank_a533098d40a70a2a55d35badabb610f7c}\label{class_bank_a533098d40a70a2a55d35badabb610f7c}} 
+\index{Bank@{Bank}!get\_interest@{get\_interest}}
+\index{get\_interest@{get\_interest}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{get\_interest()}{get\_interest()}}
+{\footnotesize\ttfamily float Bank\+::get\+\_\+interest (\begin{DoxyParamCaption}\item[{long}]{acc\+No }\end{DoxyParamCaption})}
+
+
+
+It returns the total interest amount based on the type of account. 
+
+Method \+: \mbox{\hyperlink{class_bank_a533098d40a70a2a55d35badabb610f7c}{get\+\_\+interest()}} \begin{DoxyAuthor}{Author}
+Harpreet Singh 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+29-\/10-\/2021 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em acc\+No} & It represents the account number \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_bank_8cpp_source_l00040}{40}} of file \mbox{\hyperlink{_bank_8cpp_source}{Bank.\+cpp}}.
+
+\mbox{\Hypertarget{class_bank_a0971a5cdc0c92a4a50df4ecd3294af41}\label{class_bank_a0971a5cdc0c92a4a50df4ecd3294af41}} 
+\index{Bank@{Bank}!make\_deposit@{make\_deposit}}
+\index{make\_deposit@{make\_deposit}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{make\_deposit()}{make\_deposit()}}
+{\footnotesize\ttfamily void Bank\+::make\+\_\+deposit (\begin{DoxyParamCaption}\item[{float}]{amount,  }\item[{long}]{acc\+No }\end{DoxyParamCaption})}
+
+
+
+It deposits the amount to the account. 
+
+Method \+: \mbox{\hyperlink{class_bank_a0971a5cdc0c92a4a50df4ecd3294af41}{make\+\_\+deposit()}} \begin{DoxyAuthor}{Author}
+Harpreet Singh 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+29-\/10-\/2021 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & It represents the amount to deposit \\
+\hline
+{\em acc\+No} & It represents the account number \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_bank_8cpp_source_l00110}{110}} of file \mbox{\hyperlink{_bank_8cpp_source}{Bank.\+cpp}}.
+
+\mbox{\Hypertarget{class_bank_ac7e5fe8aca9effae1464fa59aaee51ae}\label{class_bank_ac7e5fe8aca9effae1464fa59aaee51ae}} 
+\index{Bank@{Bank}!make\_withdrawl@{make\_withdrawl}}
+\index{make\_withdrawl@{make\_withdrawl}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{make\_withdrawl()}{make\_withdrawl()}}
+{\footnotesize\ttfamily bool Bank\+::make\+\_\+withdrawl (\begin{DoxyParamCaption}\item[{float}]{amount,  }\item[{long}]{acc\+No }\end{DoxyParamCaption})}
+
+
+
+It withdraws the amount from the the account and also returns bool value if withdraw was successful. 
+
+Method \+: \mbox{\hyperlink{class_bank_ac7e5fe8aca9effae1464fa59aaee51ae}{make\+\_\+withdrawl()}} \begin{DoxyAuthor}{Author}
+Harpreet Singh 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+29-\/10-\/2021 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & It represents the amount to deposit \\
+\hline
+{\em acc\+No} & It represents the account number \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_bank_8cpp_source_l00124}{124}} of file \mbox{\hyperlink{_bank_8cpp_source}{Bank.\+cpp}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_bank_a370f5f3482fbd896e2bccd648db54c1f}\label{class_bank_a370f5f3482fbd896e2bccd648db54c1f}} 
+\index{Bank@{Bank}!array\_accounts@{array\_accounts}}
+\index{array\_accounts@{array\_accounts}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{array\_accounts}{array\_accounts}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_account}{Account}}$\ast$ Bank\+::array\+\_\+accounts\mbox{[}15\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{_bank_8h_source_l00090}{90}} of file \mbox{\hyperlink{_bank_8h_source}{Bank.\+h}}.
+
+\mbox{\Hypertarget{class_bank_a47f0ec2f9807d48ec1722afce6b2491e}\label{class_bank_a47f0ec2f9807d48ec1722afce6b2491e}} 
+\index{Bank@{Bank}!NoOfAcc@{NoOfAcc}}
+\index{NoOfAcc@{NoOfAcc}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{NoOfAcc}{NoOfAcc}}
+{\footnotesize\ttfamily int Bank\+::\+No\+Of\+Acc = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{_bank_8h_source_l00091}{91}} of file \mbox{\hyperlink{_bank_8h_source}{Bank.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_bank_8h}{Bank.\+h}}\item 
+src/\mbox{\hyperlink{_bank_8cpp}{Bank.\+cpp}}\end{DoxyCompactItemize}

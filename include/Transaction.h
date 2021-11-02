@@ -1,7 +1,7 @@
 #ifndef TRANSACTION_H
 #define TRANSACTION_H
 /**
- *  @file   transaction.h
+ *  @file   Transaction.h
  *  @author Harpreet Singh
  *  @brief  It olds transaction details such as type, amount, balance ,etc.
  *  @date   29/10/2021

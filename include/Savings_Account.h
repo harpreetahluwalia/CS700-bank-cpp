@@ -1,7 +1,7 @@
 #ifndef SAVINGS_ACCOUNT_H
 #define SAVINGS_ACCOUNT_H
 /**
- *  @file   Saving_Account.h
+ *  @file   Savings_Account.h
  *  @author Harpreet Singh
  *  @brief  It includes Saving Account objects.
  *  @date   29/10/2021

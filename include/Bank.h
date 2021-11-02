@@ -53,6 +53,7 @@ class Bank
         * @date 29-10-2021
         * @brief It is used to fetch the balance of the account
         * @param accNo It represents the account number
+        * @return return balance
         */
         float balance(long accNo);
 

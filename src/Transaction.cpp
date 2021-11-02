@@ -1,5 +1,5 @@
 /**
- *  @file   transaction.h
+ *  @file   Transaction.cpp
  *  @author Harpreet Singh
  *  @brief  It olds transaction details such as type, amount, balance ,etc.
  *  @date   29/10/2021
