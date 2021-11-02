@@ -1,46 +1,63 @@
-**************************************************************** Section 1 ******************************************************************
-	Author : Harpreet Singh
+
 	Date of creation : 10/10/2021
 
-*********************************************************************************************************************************************
+**************************************************************************************************************************
+	CS700
+	ASSIGNMENT 3 
+	HARPREET SINGH
 
-*********************************************************************************************************************************************
+**************************************************************************************************************************
 
 	GITHUB @harpreetahluwalia
 	Repo : https://github.com/harpreetahluwalia/CS700-AS2
 
-*********************************************************************************************************************************************
+**************************************************************************************************************************
 
-*********************************************************************************************************************************************
+**************************************************************************************************************************
 FUNCTIONALITY OF THE PROGRAM : 
 
-Program that allows you to examine the effects of array size and initial data order by measuring the time of the program when your favorite sort operates on an array of integers.
+This program implements a bank application using c++ with the functionality of adding the bank account, deposit/withdraw from bank account, 
+get Interests or Charges on your bank accounts, and get all account details along with all the previous transactions including interests/charges etc.
 
-We will tests 10 arrays each time with three different array sizes (n =100,000, n =1,000,000, and n =10,000,000) and three different array orderings (random order, ascending order, and inverse order). Three test results (random time, ordered time, reverse time) will be produced for each array in a well-formatted fashion. A table will be used for each array size where columns represent the 10 arrays and rows represent the three tests.
+It interacts with the user and takes inputs from user according to their choices and drives the program accordingly.
 
-Ultimately, tables are printed one after another separated by a line indicating the size of the arrays.
+**************************************************************************************************************************
 
-*********************************************************************************************************************************************
-
-*********************************************************************************************************************************************
+**************************************************************************************************************************
 FILES OF THE PROGRAM (INCLUDING HEADERS AND IMPLEMENTATION) : 
 
-AS2 Sec1.cbp 	Project file
-main.cpp	It is the main program file
-calcTime.h	It includes declaration of calcTime method which calculates the time taken to sort the array.
-calcTime.cpp	It includes implementation of calcTime method which calculates the time taken to sort the array.
+// HEADER FILES : (/include/)
 
+Account.h		It includes Account details such as balance,account no. and customer date
+Adult.h			It includes Customer type Adult details and extends customer class
+Bank.h			It includes data of all the accounts and all the customers
+Checking_Account.h	It includes Checking Account objects
+Customer.h		It Customer data such as customer name, address, phone number etc
+Savings_Account.h	It includes Saving Account objects	
+Senior.h		It includes Customer type Senior details and extends customer class
+Student.h		It includes Customer type Student details and extends customer class
+Transaction.h		It olds transaction details such as type, amount, balance ,etc	
+
+
+// Implementation Files (/src/)
+
+Account.cpp		It includes Account details such as balance,account no. and customer date
+Adult.cpp		It includes Customer type Adult details and extends customer class
+Bank.cpp		It includes data of all the accounts and all the customers
+Checking_Account.cpp	It includes Checking Account objects
+Customer.cpp		It Customer data such as customer name, address, phone number etc
+Savings_Account.cpp	It includes Saving Account objects
+Senior.cpp		It includes Customer type Senior details and extends customer class
+Student.cpp		It includes Customer type Student details and extends customer class
+Transaction.cpp		It olds transaction details such as type, amount, balance ,etc
+
+// main
+
+main.cpp	It is the main program file.
 	
 Doxygen documentation in HTML file	/html/index.html
 Screenshots of the console output	/Screenshots
-exe file for the program.		/debug/AS2 Sec 1.exe
+Output of console 			output.txt
 
-*********************************************************************************************************************************************
+**************************************************************************************************************************
 
-INSTRUCTION :
-1. Open the AS2 Sec1.cbp file or import the project.
-2. Build and run the project.
-3. Output will be presented on the console.
-Note : Once results of array size of 100000 and 1000000 are printed, compiler might take 2-3 minutes to print results for arrays of size 10000000.
-
-*********************************************************************************************************************************************
