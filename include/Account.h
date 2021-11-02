@@ -154,7 +154,7 @@ class Account
         long account_number;
         Customer customer;
         int noOfTrans = 0;
-        Transaction *transactions_array[10];
+        Transaction *transactions_array[30];
 
     private:
 

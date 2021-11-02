@@ -7,7 +7,7 @@
 **************************************************************************************************************************
 
 	GITHUB @harpreetahluwalia
-	Repo : https://github.com/harpreetahluwalia/CS700-AS2
+	Repo : https://github.com/harpreetahluwalia/CS700-bank-cpp
 
 **************************************************************************************************************************
 
@@ -59,3 +59,9 @@ Output of console 			output.txt
 
 **************************************************************************************************************************
 
+INSTRUCTION :
+1. Open the Assignment 3.cbp file or import the project.
+2. Build and run the project.
+3. Choose the options according to output on the console and utilize the program.
+
+**************************************************************************************************************************
