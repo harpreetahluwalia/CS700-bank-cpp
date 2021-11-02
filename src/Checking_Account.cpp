@@ -1,25 +1,13 @@
 #include "Checking_Account.h"
-
+/**
+ *  @file   Checking_Account.h
+ *  @author Harpreet Singh
+ *  @brief  It includes Checking Account objects.
+ *  @date   29/10/2021
+ ***********************************************/
 Checking_Account::Checking_Account()
 {
     //ctor
-    flag = 0;
-}
-
-
-
-
-void Checking_Account::deposit(){
-
-
-};
-
-void Checking_Account::withdraw(){
-
-}
-
-void Checking_Account::add_interest(){
-
 }
 
 
